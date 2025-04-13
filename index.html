@@ -1,0 +1,79 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">hello</h1>
+    <p class="para">Lorem ipsum ddolor sit amet consectetur adipisicing elit. Incidunt, rerum.</p>
+    <div id="content">
+        
+    </div>
+    <ol>
+        <li class="element">hello world 1</li>
+        <li class="element">hello world 2</li>
+        <li class="element">hello world 3</li>
+        <li class="element">hello world 4</li>
+    </ol>
+    
+    <script>
+        let parent = document.querySelector('#content')
+
+        for (let index = 1; index < 11; index++) {
+            const p = document.createElement('p')
+            p.appendChild(document.createTextNode(`2 x ${index} = ${2*index}`))
+            parent.appendChild(p)
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            height: 50px;
+            width: 100%;
+        }
+        .theme{
+            color: rgb(232, 67, 67);
+            background-color: rgb(27, 205, 237);
+            opacity: 0.3;
+        }
+        .theme1{
+            color: white;
+            background-color: rgb(173, 81, 244);
+            opacity: 0.3;
+        }
+        *{
+            border: 2px solid black;
+        }
+        ol{
+            padding: 40px;
+        }
+        body{
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+<div style="padding: 100px;">
+    <ol>
+        <li>Hello world 1</li>
+        <li>Hello world 2</li>
+        <li>Hello world 3</li>
+        <li>Hello world 4</li>
+        <li>Hello world 5</li>
+    </ol>
+</div>
+    
+    <script src="test.js"></script>
+</body>
+</html>

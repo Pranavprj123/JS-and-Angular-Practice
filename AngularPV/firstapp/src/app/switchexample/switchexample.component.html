@@ -1,0 +1,29 @@
+<div class="container border border-primary">
+    <div [ngSwitch]="requestStatus">
+
+        <h3 *ngSwitchCase="'pending'">Request is pending. </h3>
+        <h3 *ngSwitchCase="'approved'">Request has been approved.</h3>
+        <h3 *ngSwitchCase="'rejected'">Request has been rejected.</h3>
+        <h3 *ngSwitchDefault>Default Value</h3>
+
+        <button class="btn btn-warning m-3" (click)="changeStatus('pending')">Pending</button>
+        <button class="btn btn-success m-3" (click)="changeStatus('approved')">Approved</button>
+        <button class="btn btn-danger m-3" (click)="changeStatus('rejected')">Rejected</button>
+    </div>
+        <!-- <button class="btn btn-info m-3" (click)="changeStatus('default')">Default</button> -->
+        <br>
+        <br>
+
+        <!-- <div [ngSwitch]="course">
+        <h3 *ngSwitchCase="'Python'">Python</h3>
+        <p *ngSwitchCase="Python">This is Python</p>
+        <h3 *ngSwitchCase="'SQL'">SQL</h3>
+        <p *ngSwitchCase="SQL">This is SQL</p>
+        <h3 *ngSwitchCase="'Web Design'">Web Design</h3>
+        <p *ngSwitchCase="Web Design">This is Web Design</p>
+
+        <button class="btn btn-primary m-3" (click)="changeCourse('Python')">Python</button>
+        <button class="btn btn-primary m-3" (click)="changeCourse('SQL')">SQL</button>
+        <button class="btn btn-primary m-3" (click)="changeCourse('Web Design')">Web Design</button>
+    </div> -->
+</div>

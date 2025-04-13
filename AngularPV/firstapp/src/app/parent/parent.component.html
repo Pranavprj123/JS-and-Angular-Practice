@@ -1,0 +1,4 @@
+<div class="container m-3 border border-dark">
+    <p>Parent Component</p>
+    <app-child [receivedData]="parentData" (eventemmiter)="receiveMessage($event)" (student)="receiveStudentDetails($event)"></app-child>
+</div>

@@ -1,0 +1,26 @@
+<div class="container border border-primary">
+    <h1>Data Binding</h1>
+    <ul>
+        <li>One way Data Binding1</li>
+        <ol>
+            <li>Interpolation</li>
+            <p>FullName: {{firstname}}  {{lastname}}</p>
+            <p>Age: {{age}} IsActive: {{isActive}}</p>
+
+            <li>Property Binding</li>
+            FirstName: <input type="text" [value]="firstname" name="" id=""> <br>
+            Age: <input type="number" [value]="age" name="" id=""> <br>
+
+
+            <li>Event Binding</li>
+            <button class="btn btn-warning" (dblclick)="showAlert()">Click Here</button>
+
+            <li>Style Binding</li>
+            <p [style.color]="border">This is a paragraph</p>
+            <h1 [style.border]="border">Hello</h1>
+
+            
+        </ol>
+        <li>Two way Data Binding2</li>
+    </ul>
+</div>

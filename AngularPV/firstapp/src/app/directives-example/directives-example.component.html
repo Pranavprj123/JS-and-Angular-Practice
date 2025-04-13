@@ -1,0 +1,44 @@
+<h4 class="text-white bg-danger" *ngIf="loggedIn ; else block">Logged In</h4>
+
+<ng-template #block>
+    <h4 class="text-white bg-danger">Logged Out</h4>
+</ng-template>
+
+
+<p class="text-white bg-primary" *ngFor="let s of subjects">{{s}}</p>
+
+<p class="list-group" *ngFor="let player of players">{{player}}</p>
+
+
+<table class="table" style="border: 2px solid black;">
+    <thead>
+      <tr>
+        
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.marks}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <hr>
+
+
+  <div *ngIf="status; then ifblock else elseblock"></div>
+  <ng-template #ifblock>
+    <h4 class="text-white bg-success">Status is True</h4>
+  </ng-template>
+  <ng-template #elseblock>
+    <h4 class="text-white bg-danger">Status is False</h4>
+  </ng-template>
+
+ 
+
