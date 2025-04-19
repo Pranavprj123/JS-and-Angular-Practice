@@ -2,3 +2,19 @@
     <h3>Attribute Directives</h3>
     <p [ngClass]="[classes.bg,classes.tc]">Hii there were !!!!</p>
 </div>
+
+<div class="card text-white mb-3" style="max-width: 18rem;" [ngClass]="{'bg-dark':darktheme,'bg-primary':!darktheme}">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+        <h5 class="card-title">Dark card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button class="btn btn-primary" (click)="toggle()">Change Theme</button>
+    </div>
+    
+    
+</div>
+
+<div>
+    <h3 [ngStyle]="boxStyles()">Color Changed</h3>
+    <button class="btn btn-primary" (click)="changeHighlight()">Change Theme</button>
+</div>
